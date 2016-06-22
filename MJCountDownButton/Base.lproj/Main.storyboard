@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-8X-9qg">
+                                <rect key="frame" x="240" y="161" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.74117647058823533" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="U18-SX-pUo"/>
+                                    <constraint firstAttribute="height" constant="44" id="oCu-H1-I1w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="获取验证码">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="vBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bPJ-mx-7ED"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-Rq-UhL" customClass="MJCountDownButton">
+                                <rect key="frame" x="240" y="286" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.74117647060000003" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3cD-Kb-rzs"/>
+                                    <constraint firstAttribute="width" constant="120" id="c1R-t8-APY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="获取验证码">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MmG-fx-qG2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用UIButton (CountDown)分类中的方法实现" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qna-vi-vrE">
+                                <rect key="frame" x="0.0" y="120" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用UIButton的子类MJCountDownButton实现" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDy-RH-Ctr">
+                                <rect key="frame" x="0.0" y="245" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wXe-Rq-UhL" firstAttribute="top" secondItem="EDy-RH-Ctr" secondAttribute="bottom" constant="20" id="9Qb-6R-daQ"/>
+                            <constraint firstItem="pBC-8X-9qg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNl-9A-e3O"/>
+                            <constraint firstItem="pBC-8X-9qg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="DS7-zP-hY8"/>
+                            <constraint firstAttribute="trailing" secondItem="qna-vi-vrE" secondAttribute="trailing" id="L7X-IF-W6Q"/>
+                            <constraint firstItem="pBC-8X-9qg" firstAttribute="top" secondItem="qna-vi-vrE" secondAttribute="bottom" constant="20" id="PtD-i3-a8F"/>
+                            <constraint firstItem="qna-vi-vrE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="QeL-hD-6wR"/>
+                            <constraint firstItem="pBC-8X-9qg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aCA-1L-KH8"/>
+                            <constraint firstItem="wXe-Rq-UhL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fLh-la-xUO"/>
+                            <constraint firstItem="wXe-Rq-UhL" firstAttribute="top" secondItem="pBC-8X-9qg" secondAttribute="bottom" constant="40" id="oFA-ee-9fa"/>
+                            <constraint firstItem="qna-vi-vrE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="obM-CS-axm"/>
+                            <constraint firstItem="wXe-Rq-UhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qy2-5F-02D"/>
+                            <constraint firstItem="EDy-RH-Ctr" firstAttribute="top" secondItem="pBC-8X-9qg" secondAttribute="bottom" constant="40" id="veX-GM-J1I"/>
+                            <constraint firstAttribute="trailing" secondItem="EDy-RH-Ctr" secondAttribute="trailing" id="xsc-nK-ywi"/>
+                            <constraint firstItem="EDy-RH-Ctr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ztM-Cp-5iq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DS7-zP-hY8"/>
+                                <exclude reference="aCA-1L-KH8"/>
+                                <exclude reference="fLh-la-xUO"/>
+                                <exclude reference="oFA-ee-9fa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cBtn" destination="wXe-Rq-UhL" id="1Ea-bE-T56"/>
+                        <outlet property="vBtn" destination="pBC-8X-9qg" id="Qa9-Tq-ClX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
