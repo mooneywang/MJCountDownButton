@@ -1,2 +1,2 @@
 # MJCountDownButton
-![countdown.gif](/MJCountDownButton/countdown.gif)
+![countdown.gif](/countdown.gif)
