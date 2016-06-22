@@ -1,2 +1,2 @@
 # MJCountDownButton
-(countdown.gif)[MJCountDownButton/countdown.gif]
+![countdown.gif](https://github.com/mooneywang/MJCountDownButton.git/MJCountDownButton/countdown.gif)
